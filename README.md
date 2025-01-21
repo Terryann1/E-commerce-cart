@@ -1,8 +1,47 @@
-# React + Vite
+# E-commerce Cart
+## Description
+Implementing a mini web app to practice components,props,state,events and data management in React.
+This app allows users to browse a list of products, add them to a cart, modify cart contents, and view a total price.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
+- [Core deliverables](#core-deliverables)
+- [Technology used](#technology-used)
+- [Contributions](#contributions)
+- [Contact](#contact)
+## Core deliverables
+- See a list of available products with their names, prices, and an "Add to Cart" button
+- Add a product to the cart, increasing its quantity if it’s already in the cart.
+- View a list of all items in the cart, including their names, prices, quantities, and the total price.
+- Remove a product from the cart or adjust its quantity.
+## Technology used
+React library
+## Contributions
+1. **Fork the repository**
+2. **Clone into the repository**
+```bash
+git@github.com:Terryann1/E-commerce-cart.git
+```
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. **Navigate into project folder**
+```bash
+cd E-commerce
+```
+4. **Run the application**
+```bash
+npm run dev
+```
+5. **Add and commit your changes**
+```bash
+git add .
+```
+```bash
+git commit -m "Add a new feature"
+```
+## Contact
+1. **Name: Terryann Odinga**
+2. **Email: terryann.odinga@student.moringaschool.com**
+3. **Project link**
+```bash
+https://github.com/Terryann1/E-commerce-cart
+```
