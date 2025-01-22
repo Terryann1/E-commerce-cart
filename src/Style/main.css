@@ -1,6 +1,7 @@
 .App {
     font-family: Arial, sans-serif;
     padding: 20px;
+    background-color: bisque;
   }
   
   .product-list {
@@ -34,7 +35,7 @@
   
   .product-item button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color:  #45a049;
     color: white;
     border: none;
     cursor: pointer;
