@@ -26,6 +26,25 @@ function App() {
     }
   };
 
+  // Function to handle removing a product from the cart
+  const handleRemoveFromCart = (productId) => {
+    setCart(cart.filter((item) => item.id !== productId));
+  };
+
+  // Function to handle adjusting the quantity of a product
+  const handleAdjustQuantity = (productId, action) => {
+    setCart(
+      cart.map((item) =>
+        item.id === productId
+          ? {
+              ...item,
+              quantity: action === 'increase' ? item.quantity + 1 : Math.max(1, item.quantity - 1),
+            }
+          : item
+      )
+    );
+  };
+
   // Calculate total price of items in the cart
   const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
@@ -46,6 +65,9 @@ function App() {
             {cart.map((item) => (
               <li key={item.id}>
                 {item.name} - ${item.price} x {item.quantity}
+                <button onClick={() => handleAdjustQuantity(item.id, 'decrease')}>-</button>
+                <button onClick={() => handleAdjustQuantity(item.id, 'increase')}>+</button>
+                <button onClick={() => handleRemoveFromCart(item.id)}>Remove</button>
               </li>
             ))}
           </ul>
@@ -57,3 +79,7 @@ function App() {
 }
 
 export default App;
+
+
+
+
