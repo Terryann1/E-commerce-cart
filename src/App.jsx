@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ProductList from './Components/productList';
 import products from './data/Products';
+import './Style/main.css';
 
 function App() {
   // State for storing the cart items
