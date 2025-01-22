@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Shopping Cart App</h1>
+      <h1>E-commerce Cart App</h1>
 
       {/* Display available products */}
       <ProductList products={products} onAddToCart={handleAddToCart} />
