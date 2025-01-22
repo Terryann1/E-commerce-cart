@@ -11,8 +11,8 @@ const ProductList = ({ onAddToCart }) => {
               {/* Display Product Image */}
               <img src={product.image} alt={product.name} className="product-image" />
               
-              <h3>{product.name}</h3>
-              <p>${product.price}</p>
+              <h3>{products.name}</h3>
+              <p>${products.price}</p>
               <button onClick={() => onAddToCart(product)}>Add to Cart</button>
             </div>
           ))}
