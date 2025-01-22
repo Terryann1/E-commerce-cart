@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import ProductList from './Components/productList'
-import products from './data/Products'
+import { useState } from 'react';
+import './App.css';
+import ProductList from './Components/productList';
+import products from './data/Products';
 
 function App() {
-  return(
-    
-    // State for storing the cart items
+  // State for storing the cart items
   const [cart, setCart] = useState([]);
 
   // Function to handle adding products to the cart
@@ -56,8 +54,5 @@ function App() {
     </div>
   );
 }
-  
-  
 
-
-export default App
+export default App;
